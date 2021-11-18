@@ -1,26 +1,11 @@
-# Firebase Integration
+# ToDo App NEXT.js
 
-## You will need to create a new repo for this class  
-## call it something like firebase-vercel
+## SVGR ---> react component
 
-# ENV FILES
-NEXT_PUBLIC_FIREBASE_API_KEY=
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
-NEXT_PUBLIC_FIREBASE_DATABASE_URL=
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
-NEXT_PUBLIC_FIREBASE_APP_ID=
+## SVGO ---> optimizer for svg strip needless tag
 
+REACT Icons: https://react-icons.github.io/react-icons/
 
-## CONFIG FILE
+SVGR: https://react-svgr.com/docs/getting-started/
 
-const clientCredentials = {
-apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL,
-projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-}
+Useful Blog: https://www.robinwieruch.de/

@@ -1,19 +1,37 @@
-import firebase from './../firebase';
+// REACT EVENTS 
+// REAT STATE
 
-import NavBar from '../components/navbar'
-import Brand from './../components/branding'
+import React, { useState } from 'react';
+import { GoogleProvider } from 'components/auth/providers/google';
 
-export default function Home() {
-  console.log(firebase);
-   
+function index() {
   return (
-     <div>
-       <NavBar/>
-       <Brand title="Home Page" tagline="directory app start"/>
-
-     </div>
-     
-       
-    
+    <div>
+      <GoogleProvider />
+    </div>
   )
 }
+
+// useState
+// use-- hook -function()
+
+// function Counter(props) {
+//   const [count, setCount] = useState(12);
+
+//   function handleClick(e){
+//     setCount(count+1)
+//   }
+
+//   return ( 
+//     <div>
+//       <div>{count}</div>
+//       <button onClick={handleClick}>increment</button>      
+//     </div>
+//   )
+// }
+  
+  
+  
+// export default Counter
+
+export default index
