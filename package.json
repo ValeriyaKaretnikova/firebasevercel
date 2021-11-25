@@ -1,5 +1,7 @@
 {
-  "name": "next-pages-routing",
+  "name": "todo-app-next",
+  "version": "1.0.0",
+  "description": "web app project that allows an authentificated user to create and manipulate different tasks",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,20 +10,30 @@
     "clean": "rm -rf .next node_modules",
     "lint": "next lint"
   },
+  "keywords": [
+    "todo",
+    "todo-app",
+    "todo-app-next"
+  ],
+  "author": "Valeriya Karetnikova",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ValeriyaKaretnikova/todoAppNext"
+  },
   "dependencies": {
-    "babel-plugin-styled-components": "^2.0.1",
-    "firebase": "^9.3.0",
-    "hooks": "^0.3.2",
-    "next": "12.0.2",
+    "firebase": "^9.5.0",
+    "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-firebase": "^2.2.8",
+    "react-firebase-hooks": "^4.0.1",
     "react-icons": "^4.3.1",
     "styled-components": "^5.3.3",
     "swr": "^1.0.1"
   },
   "devDependencies": {
     "@svgr/cli": "^5.5.0",
+    "babel-plugin-styled-components": "^2.0.1",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.2",
     "sass": "^1.43.4"

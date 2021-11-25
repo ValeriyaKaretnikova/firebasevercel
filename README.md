@@ -1,13 +1,15 @@
-# ToDo App NEXT.js
+# **ToDo App NEXT.js**
 
-## SVGR ---> react component
+Web app project **"ToDo App Next.js"** allows an authentificated user to create and manipulate (edit, delete, complete) different tasks.
 
-## SVGO ---> optimizer for svg strip needless tag
+This application is built by using:
+- Next.js
+- React
+- Firebase
+- Styled Components
 
-REACT Icons: https://react-icons.github.io/react-icons/
+---
 
-SVGR: https://react-svgr.com/docs/getting-started/
+**Link to the website**
 
-Useful Blog: https://www.robinwieruch.de/
-
-Rename
+[ToDo App on Vercel](https://todo-app-next-ou2ejufte-valeriyakaretnikova.vercel.app/)
