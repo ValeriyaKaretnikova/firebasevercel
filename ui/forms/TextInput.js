@@ -8,13 +8,13 @@ const FormControl = styled.div`
 import Label from "./Label" 
 import Input from "./Input"
  
- function TextInput({id, label, ...props}) {
+function TextInput({id, label, ...props}) {
     return (
         <FormControl>
             <Label id={id} label={label} {...props}/> 
-            <Input {...props}/> 
+            <Input  {...props} /> 
         </FormControl>
     )
 }
 
-export default TextInput
+export {TextInput}

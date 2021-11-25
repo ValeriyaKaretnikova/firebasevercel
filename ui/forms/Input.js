@@ -9,8 +9,9 @@ const FormInput = styled.input`
     padding: 0.25rem 0.5rem;
 `;
  function Input(props) {
+  
     return (
-      <FormInput {...props}/>
+      <FormInput {...props} />
     )
 }
 
