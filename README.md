@@ -12,4 +12,4 @@ This application is built by using:
 
 **Link to the website**
 
-[ToDo App on Vercel](https://todo-app-next-ou2ejufte-valeriyakaretnikova.vercel.app/)
+[ToDo App on Vercel](https://todo-app-next-hazel.vercel.app/)
