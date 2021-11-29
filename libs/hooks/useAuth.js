@@ -6,17 +6,21 @@ import {auth} from 'libs/firebase'
 function useAuth() {
     const [user, setUser] = useState(null)
 
-    useEffect(()=>{      
-        onAuthStateChanged(auth, (clientCredential)=> {
+    useEffect(()=>{ 
+        //component mounts     
+       const authChange = onAuthStateChanged(auth, (clientCredential)=> {
             if (clientCredential){
-
                 setUser(clientCredential)
             }
             else {
                 setUser(null)
             }
         })
-    })
+
+        //component unmounts
+        return () => authChange()
+
+    }, [])
     return user
 }
 export {useAuth}
