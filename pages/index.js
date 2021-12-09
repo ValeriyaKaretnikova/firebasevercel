@@ -1,34 +1,52 @@
-import { AppBar } from "components/appbar"
-import { GitHubProvider, GoogleProvider } from "components/authentication/providers"
-import { Title } from "ui/title"
-import { Divider} from "ui/spacers"
-import {UserLogin} from "components/authentication/user-login"
-import { Legal, HighLight } from "ui/legal"
-import {PageLayout, PageHeader, PageFooter, PageBody} from 'layouts/loginpage'
-function index (){
-    
-    return(
-        <>
-              <AppBar/>
-              <PageLayout>
-                    <PageHeader>
-                    <Title>Account Login</Title>
-                    </PageHeader>
-               <PageBody>
-                   <GoogleProvider style={{marginBottom:"1.5rem"}}>With Google</GoogleProvider>
-                   <GitHubProvider>With GitHub</GitHubProvider>
-                   <Divider className="spacing" >OR</Divider>
-                   <UserLogin/>
-                </PageBody>             
-                <PageFooter>
-                        <Legal>Legal Stuff  <HighLight>terms and conditions</HighLight></Legal>
-                </PageFooter>
+import Link from "next/link";
 
-              </PageLayout>
-        </>
-    )
+function index(props) {
+  return (
+    <Link href="/login">
+      <a>Login</a>
+    </Link>
+  );
 }
 
- 
+export default index;
 
-export default index
+// import { useEffect, useState } from "react";
+// import { collection, getDocs } from 'firebase/firestore';
+// import {db} from 'libs/firebase';
+
+// function UserProfile({ age, fullName, address, ...props }) {
+//   return (
+//     <ul>
+//       <li>{fullName}</li>
+//       <li>{age}</li>
+//       <li>{address.city}</li>
+//     </ul>
+//   );
+// }
+
+// function Index(props){
+//     const [users, setUsers] = useState([]);
+
+//     useEffect(()=>{
+//         async function getFirebaseDoc() {
+//             const ref = collection(db, 'users');
+//             const userSnapshot = await getDocs(ref)
+
+//             userSnapshot.forEach(doc => {
+//                 setUsers(doc.data())
+//             })
+//         }
+
+//         getFirebaseDoc();
+//     }, [])
+
+//     if (users) {
+//     // return <div><UserProfile {...userProfile}/></div>
+//         return <div>Getting a group of documents</div>;
+//     } else {
+//     // return <div>{output}</div>
+//         return <div>Getting a group of documents</div>;
+//     }
+// }
+
+// export default Index;
